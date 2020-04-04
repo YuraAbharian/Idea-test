@@ -6,9 +6,10 @@ import { IdeaModule } from './idea/idea.module';
 import { TypeOrmConfig } from './typeorm.config';
 import { HttpErrorFilter } from './shared/http-error.filter';
 import { LoggingInterceptor } from './shared/logging.interceptor';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(TypeOrmConfig), IdeaModule],
+  imports: [TypeOrmModule.forRoot(TypeOrmConfig), IdeaModule, UserModule],
   providers: [
     {
       provide: APP_FILTER,
