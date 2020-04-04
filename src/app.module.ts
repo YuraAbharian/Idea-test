@@ -12,7 +12,7 @@ import { LoggingInterceptor } from './shared/logging.interceptor';
   providers: [
     {
       provide: APP_FILTER,
-      useClass: HttpErrorFilter,
+      useClass: HttpErrorFilter
     },
     {
       provide: APP_INTERCEPTOR,
