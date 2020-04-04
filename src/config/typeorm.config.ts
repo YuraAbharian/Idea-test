@@ -1,5 +1,4 @@
-import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { IdeaEntity } from '../idea/idea.entity';
+import { TypeOrmModuleOptions } from '@nestjs/typeorm'; 
 
 export const TypeOrmConfig: TypeOrmModuleOptions = {
   type: 'postgres',

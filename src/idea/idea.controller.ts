@@ -27,6 +27,7 @@ export class IdeaController {
 
   @Post()
   async create(@Body() data: IdeaDto): Promise<IdeaEntity> {
+    console.log('data :', data);
     return await this.ideaService.createIdea(data);
   }
 
